@@ -58,7 +58,7 @@ public:
   void OnReset() override;
 private:
   static constexpr int kScopeBufferSize = 128;
-  
+
   IBufferSender<2, kScopeBufferSize, kScopeBufferSize*2> mScopeSender;
   IBufferSender<1> mDisplaySender;
   IPeakSender<2> mMeterSender;
